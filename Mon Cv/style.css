@@ -1,0 +1,85 @@
+/*propiete body change le fond et la marge*/
+body{
+    background-color: rgb(232, 230, 225);
+    padding: 0 30%;/*0px en haut et en bas, 30% à gauche et à droite */
+}
+
+/*Change toutes les polices et les alignes au début*/
+*{
+    font-family: Avenir, sans-serif;
+    text-align: start;
+}
+
+/*Change la couleur et la taille du texte*/
+h1{
+    color: rgb(50, 50, 50);
+    font-size: 60px;
+}
+
+/*Change la couleur et la taille du texte*/
+h2{
+    color: rgb(68, 68, 68);
+    font-size: 35px; 
+}
+
+/*Change la couleur et la taille du texte*/
+section{
+    color: rgb(74, 74, 74);
+    font-size: 18px; 
+}
+/*Change la couleur et la taille du texte*/
+footer p {
+    font-size: 23px;
+    color : rgb(68, 68, 68);
+}
+
+/*Change la couleur et enlève le sous-ligneur*/
+a{
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+}
+
+/*Change la couleur, enlève le souligneur et la taille du texte*/
+footer a{
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    font-size: 23px;
+  }
+
+/*Fais une transition quand la souris passe dessus*/
+a:hover{
+    color: rgb(22, 22, 22);
+    transition: 0.4s;
+}
+
+/*Création de la flex-box pour les images*/
+.flex-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 100px;
+}
+
+/*Modifie la taille des images flex-box*/
+.flex-container img {
+    width: 90px;
+    height: auto;
+}
+
+/*modifie les propiétés du bouton pour télécharger le CV en html*/
+button{
+        background-color: #373737; /* Green */
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+}
+
+/*Fais une transition du texte du bouton*/
+button:hover{
+    color: rgb(202, 202, 202);
+    transition: 0.4s;
+}
