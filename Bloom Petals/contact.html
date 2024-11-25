@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage Du Document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Affichage Mobile -->
+    <meta name="description" content="Site BloomPetals Vendeur de Felure"> <!-- Description de la page -->
+    <meta name="keywords" content="BloomPetals, Fleur"> <!-- Mots Clés (Moteur de Recherche) -->
+    <meta name="author" content="Estéban Genty"> <!-- Auteur -->
+    <title>BloomPetals - Contact</title> <!-- Titre Du Site -->
+    <link rel="stylesheet" href="contact.css">
+    <!--Police d'écriture-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"><!--Police Titre H2 / P / A-->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"><!--Police Titre H1-->
+</head>
+
+<body>
+    <!--En tête de page-->
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a href="./index.html">Home</a>
+                <a href="./entreprise.html">Entreprise</a>
+                <a href="./realisation.html">Réalisations</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="nav-right">
+                <input type="search" id="mySearch" placeholder="Rechercher..." />
+            </div>
+            <div class="menu-hamburger">&#9776;</div>
+    </nav>
+    </header>
+    
+    <main>
+        <!--Formulaire Contact-->
+        <section class="form-contact">
+            <h1>Contact :</h1>
+                <div class="flex-contact">
+                <form action="#" method="post"> 
+
+                    <!--Champ Civilité-->
+                    <label for="civilite">Civilité : </label>
+                        <select name="civilite">
+                            <option value="Monsieur">Monsieur</option>
+                            <option value="Madame">Madame</option>
+                        </select>
+
+                        <!--Input Nom & Prénom-->
+                    <label for="name">Nom & Prénom</label>
+                    <input type="text" name="name"/>
+
+                    <!--Champ Adresse-->
+                    <label for="adress">Adresse Postale</label>
+                    <input type="text" name="adress"/>
+
+                    <!--Champ Code Postale-->
+                    <label for="zip">Code Postale</label>
+                    <input type="text" name="zip"/> 
+                    
+                    <!--Champ Ville-->
+                    <label for="ville">Ville</label>
+                    <input type="text" name="ville"/>
+
+                    <!-- Champ Validité Politique -->
+                        <label for="tos">
+                            <input type="checkbox" id="tos" name="tos" required/>
+                            J'ai lu la Politique de Confidentialité
+                        </label>
+
+                    <input type="submit" name="valid" value="Envoyer"/>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-left")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage Du Document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Affichage Mobile -->
+    <meta name="description" content="Site BloomPetals Vendeur de Felure"> <!-- Description de la page -->
+    <meta name="keywords" content="BloomPetals, Fleur"> <!-- Mots Clés (Moteur de Recherche) -->
+    <meta name="author" content="Estéban Genty"> <!-- Auteur -->
+    <title>BloomPetals - Realisation</title> <!-- Titre Du Site -->
+    <link rel="stylesheet" href="realisation.css">
+    <!--Police d'écriture-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"><!--Police Titre H2 / P / A-->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"><!--Police Titre H1-->
+</head>
+
+<body>
+    <!--En tête de page-->
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a href="./index.html">Home</a>
+                <a href="./entreprise.html">Entreprise</a>
+                <a href="./realisation.html">Réalisations</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="nav-right">
+                <input type="search" id="mySearch" placeholder="Rechercher..." />
+            </div>
+            <div class="menu-hamburger">&#9776;</div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="engagement">
+            <h1>Notre Engagement</h1>
+            <p>Nous nous engageons à apporter une touche florale élégante et raffinée à chaque
+                événement. Chaque bouquet que nous créons est un mélange harmonieux de couleurs
+                vibrantes, de textures luxuriantes et d'arômes enivrants. Notre équipe expérimentée
+                collabore étroitement avec vous pour comprendre vos besoins et vos préférences, puis
+                transforme ces idées en arrangements floraux exceptionnels qui complètent parfaitement
+                l'ambiance de votre fête.</p>
+
+        <div class="image-mosaic">
+                <img src="image/image1.jpg" alt="img1">
+                <img src="image/image2.jpg" alt="img2">
+                <img src="image/image3.jpg" alt="img3">
+                <img src="image/image4.jpg" alt="img4">
+                <img src="image/image5.jpg" alt="img5">
+                <img src="image/image6.jpg" alt="img6">
+                <img src="image/image7.jpg" alt="img7">
+                <img src="image/image8.jpg" alt="img8">
+                <img src="image/image9.jpg" alt="img9">
+                <img src="image/image10.jpg" alt="img10">
+                <img src="image/image11.jpg" alt="img11">
+        </div>
+        </section>
+    </main>
+    <footer></footer>
+
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-left")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

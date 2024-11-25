@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage Du Document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Affichage Mobile -->
+    <meta name="description" content="Site BloomPetals Vendeur de Felure"> <!-- Description de la page -->
+    <meta name="keywords" content="BloomPetals, Fleur"> <!-- Mots Clés (Moteur de Recherche) -->
+    <meta name="author" content="Estéban Genty"> <!-- Auteur -->
+    <title>BloomPetals - Acceuil</title> <!-- Titre Du Site -->
+    <link rel="stylesheet" href="index.css">
+    <!--Police d'écriture-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"><!--Police Titre H2 / P / A-->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"><!--Police Titre H1-->
+</head>
+
+<body>
+    <!--En tête de page-->
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a href="./index.html">Home</a>
+                <a href="./entreprise.html">Entreprise</a>
+                <a href="./realisation.html">Réalisations</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="nav-right">
+                <input type="search" id="mySearch" placeholder="Rechercher..." />
+            </div>
+            <div class="menu-hamburger">&#9776;</div>
+    </nav>
+    </header>
+        <!--Contenu principal-->
+        <main>
+        <!--Section à propos-->
+        <section class="a-propos">
+        <h1>BloomPetals</h1>
+        <p>Chez BloomPetals, nous croyons que chaque célébration mérite d'être parée de la beauté
+            naturelle des fleurs. Nous sommes une entreprise passionnée et créative spécialisée dans
+            la confection de magnifiques bouquets floraux pour embellir vos événements spéciaux. Que
+            ce soit un mariage, un anniversaire, une réception ou toute autre occasion festive, nos
+            artisans floraux talentueux travaillent avec dévouement pour créer des arrangements
+            uniques et époustouflants qui émerveilleront vos invités.</p>
+        </section>
+
+        <!--Divider-->
+        <hr>
+
+        <!--Image (1-4)-->
+        <section class="flex-img">
+            <img src="image/image11.jpg"alt="image-fleur1">
+            <img src="image/image7.jpg"alt="image-fleur2">
+            <img src="image/image10.jpg"alt="image-fleur3">
+            <img src="image/image4.jpg"alt="image-fleur4">
+        </section>
+
+        <!--Divider-->
+        <hr>
+
+        <!--3 Service Disponible-->
+        <section class="flex-txt">
+        <div>
+                <!--Service 3-->
+                <h2><span>&#10003;</span> Création de bouquets personnalisés</h2>
+                <p>BloomPetals offre un service de création de
+                bouquets floraux entièrement personnalisés pour toutes les occasions. Que ce soit pour un
+                mariage élégant, un anniversaire chaleureux ou un événement d'entreprise sophistiqué,
+                notre équipe d'artisans floraux talentueux travaille en étroite collaboration avec les clients.
+                pour concevoir des arrangements sur mesure, adaptés à leurs goûts et à l'ambiance de
+                l'événement.</p>
+            </div>
+            <div>
+                <!--Service 2-->
+                <h2><span>&#10003;</span> Décoration Florale d'Événements</h2>
+                <p>
+                Notre équipe de professionnels se spécialise dans
+                la décoration florale d'événements. Nous transformons les lieux de fêtes en espaces
+                enchanteurs en utilisant des fleurs fraîches et luxuriantes. Des centres de table élégants aux
+                arches florales majestueuses, nous concevons des décors floraux qui éblouissent et
+                captivent les invités. Notre service comprend également la livraison, l'installation et la
+                décoration sur place pour garantir une expérience sans stress pour nos clients.</p>
+            </div>
+            <div>
+                <!--Service 3-->
+                <h2><span>&#10003;</span> Ateliers de Composition Florale</h2>
+                <p>
+                En plus de nos services de décoration et de création
+                de bouquets, BloomPetals propose des ateliers de composition florale interactifs. Ces
+                ateliers sont parfaits pour les amateurs de fleurs et les passionnés de design floral. Nos
+                experts partagent leurs connaissances et leurs compétences, guidant les participants dans
+                la création de leurs propres arrangements floraux. C'est une expérience enrichissante et
+                ludique, idéale pour les événements d'entreprise, les enterrements de vie de jeune fille ou
+                les fêtes privées. Les participants repartent avec leurs créations florales uniques et des
+                souvenirs mémorables de l'atelier.</p>
+            </div>
+        </section>
+
+        <!--Divider-->
+            <hr>
+
+        <!--Image (4-8)-->
+        <section class="flex-img">
+            <img src="image/image1.jpg"alt="image-fleur1">
+            <img src="image/image2.jpg"alt="image-fleur2">
+            <img src="image/image3.jpg"alt="image-fleur3">
+            <img src="image/image5.jpg"alt="image-fleur4">
+        </section>
+    </main>  
+    <!--Pied De page-->
+    <footer></footer>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-left")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+  </body>
+  </html>
+  

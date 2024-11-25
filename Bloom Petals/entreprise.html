@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage Du Document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Affichage Mobile -->
+    <meta name="description" content="Site BloomPetals Vendeur de Felure"> <!-- Description de la page -->
+    <meta name="keywords" content="BloomPetals, Fleur"> <!-- Mots Clés (Moteur de Recherche) -->
+    <meta name="author" content="Estéban Genty"> <!-- Auteur -->
+    <title>BloomPetals - Entreprise</title> <!-- Titre Du Site -->
+    <link rel="stylesheet" href="entreprise.css">
+    <!--Police d'écriture-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"><!--Police Titre H2 / P / A-->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"><!--Police Titre H1-->
+</head>
+
+<body>
+    <!--En tête de page-->
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a href="./index.html">Home</a>
+                <a href="./entreprise.html">Entreprise</a>
+                <a href="./realisation.html">Réalisations</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="nav-right">
+                <input type="search" id="mySearch" placeholder="Rechercher..." />
+            </div>
+            <div class="menu-hamburger">&#9776;</div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="image equipe">
+            <h1>Equipe BloomPetals</h1>
+            <div class="flex-img-entreprise">
+                <img src="image/equipe/photo1.jpg" alt="img-equipe-1"/>
+                <img src="image/equipe/photo2.jpg" alt="img-equipe-2"/>
+                <img src="image/equipe/photo3.jpg" alt="img-equipe-3"/>
+                <img src="image/equipe/photo4.jpg" alt="img-equipe-4"/>
+                <img src="image/equipe/photo5.jpg" alt="img-equipe-5"/>
+                <img src="image/equipe/photo6.jpg" alt="img-equipe-6"/>
+            </div>
+        </section>
+
+        <!--Divider-->
+        <hr>
+
+        <section class="pourquoi-bloompetals">
+            <h2>Pourquoi choisir BloomPetals ?</h2>
+            <p><strong>Créativité Illimitée :</strong> Nous repoussons les limites de la créativité pour concevoir des
+                bouquets uniques et mémorables qui ajoutent une touche magique à votre
+                événement.
+                <strong>Fleurs Fraîches et Durables :</strong> Nous sélectionnons uniquement les fleurs les plus
+                fraîches et de la plus haute qualité pour garantir la beauté de nos créations du début
+                à la fin de votre fête.
+                <strong>Service Personnalisé :</strong> Notre équipe dévouée est à votre écoute à chaque étape,
+                offrant un service personnalisé pour répondre à vos besoins spécifiques et surpasser
+                vos attentes.
+                <strong>Ponctualité et Professionnalisme :</strong> Nous sommes fiers de notre ponctualité et de
+                notre professionnalisme. Nous livrons nos créations à temps et installons chaque
+                arrangement avec soin et précision.
+                Faites de votre prochain événement un moment inoubliable avec BloomPetals. Laissez-nous
+                transformer votre espace en un véritable jardin de féerie, où chaque pétale raconte une
+                histoire d'amour, de bonheur et de célébration.</p>
+        </section>
+    </main>
+  </body>
+
+  <footer></footer>
+
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-left")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>

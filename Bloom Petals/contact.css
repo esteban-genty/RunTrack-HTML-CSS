@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(83, 83, 83);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-bar{
+    display: flex;
+    background: rgb(115, 120, 130);
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-hamburger{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(28, 32, 39);
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=search]{
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 3px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(41, 0, 10);
+    font-size: 60px;
+    padding-top: 25px;
+    font-family: 'Pacifico', cursive;
+}
+
+.flex-contact {
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eceaeb; /* Couleur de fond plus claire pour plus de lisibilité */
+    border: 2px solid rgb(138, 0, 67);
+    border-radius: 10px;
+}
+
+/* Style des labels */
+label {
+    color: #21000e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    display: block; /* Assure que les labels sont sur des lignes séparées */
+    margin-bottom: 8px;
+}
+
+/* Style des champs de texte */
+input[type="text"], select {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Style du bouton d'envoi */
+input[type="submit"] {
+    background-color: #3a0021;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #a0456b;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:900px){
+    .menu-hamburger{
+        display: block;
+        color: white;
+        margin-left: 30px;
+        font-size: 30px;
+        z-index: 10;
+    }
+    .nav-left{
+        top: 0; 
+        left: 0;
+        position: absolute;
+        background: rgb(115, 120, 130);
+        width: 100%;
+        height: 100vh;
+        display: block;
+        align-content: center;
+        margin-left: -100%;
+    }
+
+    .nav-left a{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        color: white;
+    }
+    input[type=search]{
+        display: none;
+    }
+    
+    .mobile-menu{
+        margin-left: 0;
+    }
+    
+}

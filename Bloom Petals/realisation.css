@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(83, 83, 83);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-bar{
+    display: flex;
+    background: rgb(115, 120, 130);
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-hamburger{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(28, 32, 39);
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=search]{
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 3px;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    padding-top: 25px;
+    font-family: 'Pacifico', cursive;
+}
+
+p{
+    color: rgb(147, 147, 147);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 20%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.image-mosaic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.image-mosaic img{
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+    box-shadow:8px 8px 10px 0 rgba(135, 135, 135, 0.5);
+    border: 2px solid rgb(113, 113, 113);
+    transition: width 0.4s, height 0.4s;
+}
+
+.image-mosaic img:hover{
+    width: 23%;
+    height: 23%;
+    transition: 0.4s;
+}
+
+
+/*FOOTER*/
+footer{
+    background: rgb(115, 120, 130);
+    height: 60px;
+  }
+
+@media  screen and (max-width: 900px) {
+    .menu-hamburger{
+        display: block;
+        color: white;
+        margin-left: 30px;
+        font-size: 30px;
+        z-index: 10;
+    }
+    .nav-left{
+        top: 0; 
+        left: 0;
+        position: absolute;
+        background: rgb(115, 120, 130);
+        width: 100%;
+        height: 100vh;
+        display: block;
+        align-content: center;
+        margin-left: -100%;
+    }
+
+    .nav-left a{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        color: white;
+    }
+    input[type=search]{
+        display: none;
+    }
+    
+    .mobile-menu{
+        margin-left: 0;
+    }
+    
+}
