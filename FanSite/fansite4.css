@@ -1,0 +1,477 @@
+/*Paramètre Général*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Fond de la page*/
+body{
+    background-color: #131313;
+}
+/*Scrool doux pour les ancres sommaires*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Header Menu*/
+header {
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+
+    img{
+        padding-top: 30px;
+        height: 70px;
+        width: 70px;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color:#ffffff; 
+        text-decoration:none; 
+        cursor:pointer;  
+    }
+
+    /* Style de base pour le conteneur */
+    .menu-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Style du bouton */
+    .menu-button {
+        height: 75px;
+        background-color: #131313;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        top: -28px;
+
+    }
+
+    /* Style de la liste déroulante */
+    .menu-dropdown {
+        display: none;
+        position: absolute;
+        top: 103px;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    /* Liens dans le menu */
+    .menu-dropdown a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Changement de couleur au survol */
+    .menu-dropdown a:hover {
+        background-color: #ddd;
+    }
+
+    /* Afficher le menu au survol */
+    .menu-container:hover .menu-dropdown {
+        display: block;
+    }
+
+    /* Style bouton au survol */
+    .menu-button:hover {
+        background-color: #dbdbdb;
+    }
+}
+
+/*Propriétés pages sans class*/
+h1{
+    padding: 130px 0 40px 0;
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h5{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+#section-1{
+    padding: 0;
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+hr{
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    height: 1.3px;
+    background-color: rgb(86, 86, 86);
+}
+
+
+/*Section principale content*/
+.content-container {
+    padding-top: 10px;
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/*Section de gauche*/
+.left-section {
+    margin-left: 1%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 18%; 
+    height: 410px;
+    padding: 20px;
+    background-color: #1d1d1d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1.8px solid rgb(48, 48, 48);
+    position: sticky;
+    top: 80px;
+}
+.left-section a{
+    font-size: 1.3rem;
+}
+.left-section a:hover{
+    color: #00EF00;
+    transition: 0.4s ease;
+}
+
+/*Section de droite*/
+.right-section {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+/*Section actualite (Section 1)*/
+.actualite{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.actualite article{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    background-color: #1C1C1C;
+    border: 1.8px solid rgb(48, 48, 48);
+    transition: 0.4s ease;
+}
+.actualite img{
+    border-radius: 9px;
+    width: 100%;
+    height: auto;
+}
+.actualite p{
+    font-size: 0.8rem;
+    color: rgb(199, 199, 199);
+    font-family: Montserrat, sans-serif;
+    padding: 0px 10px 10px 10px;
+}
+.actualite h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding: 15px 10px 10px 10px;
+    text-align: center;
+}
+
+/*Section realisation (Section 2)*/
+.realisation{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.realisation img{
+    border: 1.8px solid rgb(48, 48, 48);
+    opacity: 0.5;
+    width: 25%;
+    height: auto;
+    border-radius: 15px;
+    background: rgba(171, 171, 171, 0.274);
+    transition: 0.4s ease;
+}
+.realisation img:hover{
+    opacity: 1;
+    background: none;
+}
+
+/*Evenement (Section 3)*/
+.evenement p{
+    font-size: 1rem;
+    color: rgb(199, 199, 199);
+    font-family: Montserrat, sans-serif;
+    padding: 0px 10px 10px 10px;
+}
+
+/*Clip Music (Section 4)*/
+.clip {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.clip iframe {
+    width: 20%; /* La largeur des vidéos */
+    height: 400px;
+    position: relative; /* Pour que l'iframe respecte les proportions */
+    border-radius: 10px;
+    border: none;
+    border: 1.8px solid rgb(48, 48, 48);
+}
+.site-fan{
+    display: flex;
+    justify-content: center;
+}
+.site-fan article{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 70%;
+    border: 1.8px solid rgb(48, 48, 48);
+    padding: 0;
+    gap: 10px;
+    background-color: #1C1C1C;
+}
+
+.site-fan img{
+    display: flex;
+    justify-content: start;
+    border-radius: 9px;
+    width: 40%;
+    height: auto;
+}
+.site-fan div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.site-fan p{
+    font-size: 0.8rem;
+    color: rgb(199, 199, 199);
+    font-family: Montserrat, sans-serif;
+    line-height: 20px;
+}
+
+.site-fan h2{
+    padding-top: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+.site-fan a{
+    background-color: rgb(19, 19, 19);
+    color: #00EF00;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    width: 100px;
+    height: 23px;
+}
+
+
+.flex-trinity{
+    width: 40%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1.8px solid rgb(48, 48, 48);
+    background-color: #1C1C1C;
+    border-radius: 10px;
+}
+
+.flex-trinity label {
+    display: block;
+    color: #00EF00;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px; /* Ajout de l'espace sous les labels */
+}
+
+input[type="text"], select {
+    border: none;
+    background-color: rgb(19, 19, 19);
+    color: #00EF00;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px; /* Augmenter le padding pour améliorer l'aspect visuel */
+    width: 70%; /* Augmenter la largeur à 80% pour s'adapter à la taille du conteneur */
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: rgb(19, 19, 19);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #00EF00;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%; /* Réduit la largeur du bouton pour le rendre plus adapté */
+    margin-top: 10px;
+    transition: 0.4s ease;
+}
+
+.pin-input {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Ajout d'un peu d'espace sous le groupe de champs PIN */
+}
+
+.pin-input input {
+    border-radius: 4px;
+    background-color: rgb(19, 19, 19);
+    color: #00EF00;
+    margin: 0 5px;
+    border: 0px;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+input[type="text"]:focus {
+    outline: none;  /* Retirer le contour par défaut du navigateur */
+    box-shadow: none;
+}
+/* Supprimer le contour et l'ombre lors du focus (sélection du champ) */
+.pin-input input:focus {
+    outline: none; /* Retire le contour de focus */
+    box-shadow: none; /* Retire l'ombre portée sur focus */
+}
+
+input[type="submit"]:hover{
+    background-color: #00EF00;
+    color:  rgb(19, 19, 19);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%; /* Réduit la largeur du bouton pour le rendre plus adapté */
+    margin-top: 10px;
+}
+.flex-trinity h4{
+    font-size: 2rem;
+    color: #00EF00;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/*Changement de couleur fond des articles au passage de la souris*/
+article:hover{
+    background-color: #222222;
+}
+/*Adaptation à la version mobile*/
+@media (max-width: 1200px){
+    .left-section{
+        display: none;
+    }
+    .right-section{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .actualite{
+        flex-wrap: wrap;
+    }
+    .actualite article{
+        width: 80%;
+    } 
+    .realisation img{
+        width: 45%;
+        flex-wrap: wrap;
+    }
+    .clip iframe{
+        flex-wrap: wrap;
+        width: 45%;
+    }
+    .site-fan img{
+        width: 100%;
+    }
+    .site-fan article{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .flex-trinity{
+        width: 80%;
+    }
+}
+
+/*Pied de page*/
+footer{
+        margin-top: 70px;
+        background-color: #131313;
+        color: white;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        bottom: 0;
+        position: relative;
+    }
+    .menu-link{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+    .social-link{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 50px;
+        padding-bottom: 20px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img{
+        width: 50px;
+        height: auto;
+    }

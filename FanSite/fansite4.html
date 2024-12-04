@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage Du Document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Affichage Mobile -->
+    <meta name="description" content="FanSite Laylow Actualité/Discographie"> <!-- Description de la page -->
+    <meta name="keywords" content="Laylow, Fansite, fan"> <!-- Mots Clés (Moteur de Recherche) -->
+    <meta name="author" content="Estéban Genty"> <!-- Auteur -->
+    <title>FanSite 4</title> <!-- Titre Du Site -->
+    <link rel="stylesheet" href="fansite4.css"><!--Style CSS-->
+</head>
+<body>
+    <!--Header contenant 5 lien une home et 4 pages artistes-->
+    <header>
+        <nav class="menu-container">
+            <a href="index.html"><img src="image/logo.png" alt="Logo Fansite"></a>
+            <button class="menu-button">Menu</button>
+            <ul class="menu-dropdown">
+                <li><a href="article1.html">Artiste 1</a></li>
+                <li><a href="article2.html">Artiste 2</a></li>
+                <li><a href="article3.html">Artiste 3</a></li>
+                <li><a href="article4.html">Artiste 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Divider-->
+    <hr>
+
+    <main>
+        <section class="content-container">
+            <!-- Le sommaire dans aside -->
+            <aside class="left-section">
+                <h5>SOMMAIRE</h5>
+                <a href="#section-1">Actualité</a>
+                <a href="#section-2">Discographie</a>
+                <a href="#section-3">Événement</a>
+                <a href="#section-4">Clip Music</a>
+                <a href="#section-5">Autres sites fans</a>
+                <a href="#section-6">Trinity</a>
+                <a href="#section-7">Réseaux sociaux</a>
+            </aside>
+    
+                <!-- Nouvelle section à droite -->
+                <section class="right-section">
+                    
+                        <h1 id="section-1">Actualité</h1>
+                        <section class="actualite">
+                        <article>
+                            <img src="./image/actu/actu1.png" alt="laylow-actualité">
+                            <h2>Laylow accusé de plagiat par un rappeur américain</h2>
+                            <p>Alors qu’il a fait un retour surprise ce week-end, Laylow a été accusé par Rome Streetz de plagiat concernant la cover du morceau.</p>
+                        </article>       
+                        <article>
+                            <img src="./image/actu/actu2.png" alt="laylow-actualité">
+                            <h2>MusiqueShay, Jul, Lesram & 8ruki : les sorties de la semaine du 19 janvier</h2>
+                            <p>Ce vendredi 19 janvier est sûrement le plus gros rendez-vous donné par le rap français depuis le début de l’année. On fait le point sur les sorties de la semaine.</p>
+                        </article>
+                        <article>
+                            <img src="./image/actu/actu3.png" alt="laylow-actualité">
+                            <h2>MusiqueLaylow rejoint SCH sur scène pour interpréter leur feat inédit !</h2>
+                            <p>Laylow a rejoint SCH sur scène, à Bercy, ce mercredi, pour dévoiler “Dernière ligne droite”, leur collaboration.</p>
+                        </article>
+                    </section>
+
+                    <!--Section Réalisation (Section 2)-->
+                    <h1 id="section-2">Discographie</h1>
+                    <section class="realisation">
+                        <img src="image/album/trinity.jpg" alt="album trinity">
+                        <img src="image/album/histoire.png" alt="album histoire étrange mr anderson">
+                        <img src="image/album/RAW.jpg" alt="album RAW">
+                        <img src="image/album/digitalova.jpg" alt="album digitalova">
+                        <img src="image/album/mercy.jpg" alt="album mercy">
+                        <img src="image/album/digital.png" alt="album digital night">
+                    </section>
+
+                    <!--Section Evenement (Section 3)-->
+                    <h1 id="section-3">Évènements à venir</h1>
+                    <section class="evenement">
+                        <p>Il n'y a actuellement aucun évènement à venir.</p>
+                    </section>
+
+
+                    <h1 id="section-4">Clip Music</h1>
+                    <section class="clip">
+                        <iframe src="https://www.youtube.com/embed/a9zPVsdeIaM?si=F3VU-IkgViyRTPCZ" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/JPcBAT_I6Tw?si=vPebMl77HxZN2ikJ" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/6YcYsk0lbjI?si=fVwwVbydYOnDn8L2" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/39diHGBHcO4?si=iJomgGd1fu_5XRSU" allowfullscreen></iframe>
+                    </section>  
+                    <h1 id="section-5">Sites Fans</h1>
+                    <section class="site-fan">
+                            <article>
+                                <img src="./image/trinity.jpg" alt="laylow trinity">
+                                <div>
+                                    <a href="">Site Fan</a>
+                                    <h2>Un fan recréé le logiciel Trinity de Laylow</h2>
+                                    <p>À 19 ans, Pierre a recréé le logiciel "Trinity" de Laylow dans une expérience virtuelle prenante et musicale disponible sur le web. Laylow a mis tout le monde d'accord avec son premier album TRINITY. Dans une ambiance sombre et futuriste, le rappeur a balancé un album singulier, avec en son coeur, un logiciel éponyme.</p>
+                                </div>
+                            </article>
+                    </section> 
+                    <section class="form-trinity">
+                        <h1 id="section-6">Trinity</h1>
+                            <div class="flex-trinity">
+                            <form action="#" method="post"> 
+                                <h4>Bienvenue dans Trinity</h4>
+                                    <!--Input Pseudonyme-->
+                                <label for="name">Pseudonyme</label>
+                                <input type="text" name="name"/>
+
+                                <label for="code">Code 3 chiffres</label>
+                                <div class="pin-input">
+                                    <input type="password" maxlength="1" id="pin1" oninput="moveFocus(this, 'pin2')">
+                                    <input type="password" maxlength="1" id="pin2" oninput="moveFocus(this, 'pin3')">
+                                    <input type="password" maxlength="1" id="pin3" oninput="moveFocus(this, 'pin4')">
+                                </div>
+                                <input type="submit" name="valid" value="Exécuter le programe"/>
+                            </form>
+                        </div>
+                    </section>  
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="section-7">
+        
+    <!--Divider-->
+    <hr>
+    
+        <ul class="social-link">
+            <li><a href="#"><img src="./image/instagram.png" alt="Logo Instagram" name="logo-instagram"></a></li>
+            <li><a href="#"><img src="./image/X.png" alt="Logo Twitter" name="logo-twitter"></a></li>
+            <li><a href="#"><img src="./image/facebook.png" alt="Logo FaceBook" name="logo-facebook"></a></li>
+        </ul>
+        <ul class="menu-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Fan Site 1</a></li>
+            <li><a href="#">Fan Site 2</a></li>
+            <li><a href="#">Fan Site 3</a></li>
+            <li><a href="#">Fan Site 4</a></li>
+        </ul>
+        <p>@ 2024 Benjamin | Anthony | Noa | Estéban</p>
+    </footer>
+</body>
+</html>
